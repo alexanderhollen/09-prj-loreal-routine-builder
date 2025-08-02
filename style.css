@@ -292,3 +292,25 @@ button:hover,
 .generate-btn i {
   margin-right: 8px;
 }
+
+/* Style for the product search bar */
+#productSearch {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 18px;
+  border: 2px solid #c7a008;
+  border-radius: 24px;
+  background: #fffbe6;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(199, 160, 8, 0.07);
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+#productSearch:focus {
+  outline: none;
+  border-color: #000;
+  background: #fffde9;
+  box-shadow: 0 4px 16px rgba(199, 160, 8, 0.15);
+}
