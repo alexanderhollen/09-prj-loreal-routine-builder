@@ -135,6 +135,38 @@ body {
   outline-offset: 2px;
 }
 
+/* buttons */
+button,
+.generate-btn,
+.remove-selected-btn,
+#clearAllBtn,
+.desc-btn,
+.close-desc-btn {
+  background: linear-gradient(90deg, #c7a008 0%, #000 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 8px 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+button:hover,
+.generate-btn:hover,
+.remove-selected-btn:hover,
+#clearAllBtn:hover,
+.desc-btn:hover,
+.close-desc-btn:hover {
+  background: linear-gradient(90deg, #000 0%, #c7a008 100%);
+  color: #fffbe6;
+  box-shadow: 0 4px 16px rgba(199, 160, 8, 0.18);
+}
+
 /* visually hidden */
 .visually-hidden {
   position: absolute;
@@ -211,6 +243,13 @@ body {
 .product-card p {
   font-size: 14px;
   color: #666;
+}
+
+.product-card.selected {
+  border: 2px solid #c7a008; /* L'Oréal gold */
+  box-shadow: 0 0 12px 2px rgba(199, 160, 8, 0.15);
+  background: #fffbe6;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 /* selected products */
